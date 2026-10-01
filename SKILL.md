@@ -1,6 +1,6 @@
 ---
 name: blender-headless-modeling
-description: Blender 5.2 headless 建模、机验门禁、呈现渲染的完整工作流与踩坑册（真机实测）。This skill should be used when writing or running Blender headless scripts (bpy / blender -b -P), building models via booleans and curve bevels, designing machine-verified quality gates (silhouette / ray-cast / render predicates), rendering presentation frames, or debugging Blender 5.x API changes (display.shading single entry, EEVEE_NEXT id, BVHTree local coordinates, modifier apply snapshots, blown-highlight predicates).
+description: Blender 5.2 headless 建模、机验门禁、呈现渲染的完整工作流与踩坑册（真机实测）。This skill should be used when writing or running Blender headless scripts (bpy / blender -b -P), building models via booleans and curve bevels, designing machine-verified quality gates (silhouette / ray-cast / render predicates), rendering presentation frames, or debugging Blender 5.x API changes (display.shading single entry, EEVEE_NEXT id, BVHTree local coordinates, modifier apply snapshots, blown-highlight predicates). NOT for interactive/GUI-driven Blender sessions or non-Blender 3D tools.
 agent_created: true
 ---
 
@@ -10,6 +10,11 @@ agent_created: true
 
 - `references/pitfalls.md` —— API 坑全量册（含代码片段）。**跑脚本前先扫 TOP 坑**
 - `references/calibration.md` —— 门禁判据、多样性双尺标定、WAL 回退范式、生态坑
+
+## 使用边界（触发校准）
+
+- 触发：写/跑 blender -b -P 无头脚本、布尔/曲线建模、机验门禁、呈现渲染 → 用本技能
+- 不触发：GUI 交互式操作会话 → 直接指导；非 Blender 的 3D 工具 → 另查
 
 ## 环境与跑法
 
